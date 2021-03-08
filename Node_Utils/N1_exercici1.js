@@ -1,10 +1,8 @@
 
-function printMessage(i) {
-    setTimeout(() => {
+function printMessage() {
         console.log("Imprimint missatge");
-        printMessage(++i);
-    }, 1000)
+        setTimeout(printMessage,1000);
 }
 
-printMessage(0);
+printMessage(); 
 
